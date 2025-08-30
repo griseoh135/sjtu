@@ -3,7 +3,6 @@ import Mathlib
 variable {α : Type*}
 
 open Matrix Equiv Nat List
-
 section Basic
 
 variable {n m} (M : Matrix (Fin n) (Fin m) α)
@@ -756,7 +755,6 @@ theorem Matrix.exists_rank_normal_form [CommRing K] [NoZeroDivisors K] :
           else (P.1 * A * Q.1) i j = 0 := by
   sorry
 
-#checkBasis.SmithNormalForm
 theorem Matrix.exists_rank_standard_form [Field K]:
     ∃ (P : GL (Fin m) K) (Q : GL (Fin n) K),
       P.1 * A * Q.1 = rankStdBlock K m n A.rank := by
