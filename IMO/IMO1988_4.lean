@@ -93,7 +93,7 @@ theorem final_answer :
 
         --rw [propext (div_eq_iff_mul_eq Px_ne_zero)]
      --apply Finset.sum_div_prod_eq_sum_div'
-        simp_rw [div_eq_mul_inv]
+      --  simp_rw [div_eq_mul_inv]
         sorry -- 暂时先跳过这个复杂证明
 -- 2. 将引理代入你的目标
       rw [h_sum_div]
